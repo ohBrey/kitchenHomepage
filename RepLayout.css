@@ -1,0 +1,175 @@
+h1, p , table , th, td , ol,  div.steps, header {
+    font-family: 'Lora', serif;
+}
+
+body {
+	background-image: url("img/1background.jpg"), url("img/brownpic.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center, center bottom;
+}
+
+h1{
+    text-align: center;
+    color: #000000;
+    font-size: 4vw;
+    font-weight: bold;
+    border-radius: 10px;
+
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+p {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    border-radius: 10px;
+ 
+    margin-right: 50%;
+    background-color: #FFE7D4;
+}
+
+table {
+  width:  80%;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+th, th {
+ padding :10px 10px;
+ border-radius: 10px;
+
+ margin-right: 340px;
+ background-color: #FFE7D4;
+}
+
+.container {
+    font-size :16px;
+    position: center;
+    display: flex;
+    width: 85%;
+    height: auto;
+    margin: 200px auto;
+    padding: 15px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    }
+
+.left, .right{
+    width: 45%;
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+        
+.img-holder{
+    border: 5px solid #AA5300;
+    margin: 50px;
+    height: 50%;
+    border-radius: 10px;
+}
+        
+.img-holder img{
+    width: 100% ;
+    height: 100%;
+    display: #FF7C00;
+    border-radius: 5px;
+}
+
+ol  {
+    font-size : 17px;
+}
+
+
+
+#MainMenu {
+    
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0);
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index :999999;
+
+}
+
+#MainMenu #LOGO img{
+    height: 110px;
+    width: auto;
+    transition: transform 0.9s ease;
+}
+
+img:hover {
+    transform: scale(1.2);
+  }
+
+.logo-text {
+    color: #000000;
+    position: absolute;
+    font-weight: bold;
+    font-size: 3vw;
+    margin-left: 5px;
+    bottom: 55px;
+}
+
+#MainMenu #Menu{
+    width: 100%;
+    margin: 0;
+    height: 60px;
+    text-align: right;
+}
+
+#MainMenu #Menu > li {
+    display:  inline-block;
+    padding: 0 3%;
+}
+
+#MainMenu #Menu  > li a {
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    display:  inline-block;
+    color: #000000;
+}
+
+#MainMenu #Menu .SubMenu {
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0);
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    top: 70px;
+    right: 90px;
+    padding: 10px;
+
+}
+
+#MainMenu #Menu .SubMenu a {
+    padding: 15px;
+    line-height: 1px;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: block;
+    background-color: #9A7B4F;
+    border-radius: 50px;
+}
+
+#MainMenu #Menu > li:hover .SubMenu {
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+#MainMenu #Menu .SubMenu li:hover a{
+    transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,546 @@
+h1, h2, h3, p , button , div.steps, header {
+    font-family: 'Lora', serif;
+}
+
+body {
+    background-image: url("img/1background.jpg"), url("img/2background.jpg");
+    background-size: contain;
+    position: cover;
+    background-position: top center, center bottom;
+    background-repeat: no-repeat;
+  }
+  
+
+h1{
+    text-align: center;
+    color: #000000;
+    font-size: 4vw;
+    font-weight: bold;
+    border-radius: 10px;
+
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+p {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: right;
+    color: #000000;
+    border-radius: 20%;
+ 
+    margin-right: 40px;
+    padding-right: 40px;
+}
+
+h2{
+    backdrop-filter: blur(5px);
+    font-size: 2vw;
+    font-weight: bolder;
+    color: #000000;
+}
+
+.container {
+    font-size :16px;
+    position: relative;
+    display: flex;
+    width: 85%;
+    height: auto;
+    margin: 200px auto;
+    padding: 15px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+
+}
+
+.left, .right{
+    width: 45%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.img-holder{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+        
+.img-holder img{
+    width: 100% ;
+    height: 100%;
+    overflow: cover;
+    
+
+}
+
+.btn {
+    background-color: #9A7B4F;
+    color: #000000;
+    border: 4px solid;
+    position: absolute;
+    bottom: 1px;
+    right: 90px;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 7px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ffe4c4;
+}
+
+
+#MainMenu {
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0);
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index :999999;
+
+}
+
+#MainMenu #Menu{
+    width: 100%;
+    margin: 0;
+    height: 60px;
+    text-align: right;
+}
+
+#MainMenu #LOGO img{
+    height: 110px;
+    width: auto;
+    transition: transform 0.9s ease;
+}
+
+img:hover {
+    transform: scale(1.2);
+  }
+
+.logo-text {
+    color: #000000;
+    position: absolute;
+    font-weight: bold;
+    font-size: 3vw;
+    margin-left: 5px;
+    bottom: 30px;
+}
+
+
+#MainMenu #Menu > li {
+    display:  inline-block;
+    padding: 0 3%;
+    
+}
+
+#MainMenu #Menu  > li a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    display:  inline-block;
+    color: #000000;
+}
+
+#MainMenu #Menu .SubMenu {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    top: 70px;
+    right: 90px;
+    padding: 10px;
+   
+}
+
+#MainMenu #Menu .SubMenu a {
+    padding: 15px;
+    line-height: 1px;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: block;
+    background-color: #9A7B4F;
+    border-radius: 50px;
+}
+
+#MainMenu #Menu > li:hover .SubMenu {
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+#MainMenu #Menu .SubMenu li:hover a{
+    transition: all 0.3s ease-in-out;
+}
+
+.Sample{
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    padding: 10%;
+   
+
+  }
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+  
+.content {
+    height: 100%;
+    background-color: #9A7B4F;
+    text-align: center;
+    
+}
+
+img{
+    
+    border-radius: 50%; 
+    
+}
+
+.btnn {
+    background-color: #e6b77e;
+    color: #000000;
+    border: 4px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 7px;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 5px;
+  }
+  
+.btnn:hover {
+    background-color: #ffffff;
+  }
+
+.zoom {
+
+    transition: transform .2s;
+  }
+
+.zoom:hover {
+    transform: scale(1.2);
+  }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+    h1{
+      font-size: 3rem;
+    }
+  
+    p {
+      font-size: 1.5rem;
+    }
+  
+    h2{
+      font-size: 1.5rem;
+    }
+  
+    .container {
+      width: 90%;
+      margin: 100px auto;
+    }
+  
+    .left, .right{
+      width: 100%;
+    }
+  
+    .btn {
+      font-size: 20px;
+    }
+  
+    #MainMenu #LOGO img{
+      height: 80px;
+    }
+  
+    .logo-text {
+      font-size: 2rem;
+    }
+  
+    #MainMenu #Menu > li a {
+      font-size: 16px;
+    }
+  
+    #MainMenu #Menu .SubMenu {
+      min-width: 130px;
+      right: 50px;
+    }
+  
+    .Sample{
+      flex-direction: column;
+      height: auto;
+      padding: 5%;
+    }
+  
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+  
+    h1{
+      font-size: 4rem;
+    }
+  
+    p {
+      font-size: 2rem;
+    }
+  
+    h2{
+      font-size: 2rem;
+    }
+  
+    .container {
+      width: 80%;
+      margin: 150px auto;
+    }
+  
+    .left, .right{
+      width: 50%;
+    }
+  
+    .btn {
+      font-size: 25px;
+    }
+  
+    #MainMenu #LOGO img{
+      height: 100px;
+    }
+  
+    .logo-text {
+      font-size: 3rem;
+    }
+  
+    #MainMenu #Menu > li a {
+      font-size: 18px;
+    }
+  
+    #MainMenu #Menu .SubMenu {
+      min-width: 150px;
+      right: 90px;
+    }
+  
+    .Sample{
+      height: 600px;
+    }
+  
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+  
+    h1{
+      font-size: 5vw;
+    }
+  
+    p {
+      font-size: 1.5rem;
+    }
+  
+    h2{
+      font-size: 2.5rem;
+    }
+  
+    .container {
+      width: 70%;
+      margin: 200px auto;
+    }
+  
+    .left, .right{
+      width: 45%;
+    }
+  
+    .btn {
+      font-size: 30px;
+      bottom: 10px;
+    }
+  
+    #MainMenu #LOGO img{
+      height: 110px;
+    }
+  
+    .logo-text {
+      font-size: 4rem;
+    }
+  
+    #MainMenu #Menu > li a {
+      font-size: 20px;
+    }
+  
+    #MainMenu #Menu .SubMenu {
+      min-width: 170px;
+      right: 110px;
+    }
+  
+    .Sample{
+      height: 600px;
+      padding: 10%;
+    }
+  
+  }
+  
+  
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+    h1{
+      font-size: 3rem;
+    }
+  
+    p {
+      font-size: 1.5rem;
+    }
+  
+    h2{
+      font-size: 1.5rem;
+    }
+  
+    .container {
+      width: 90%;
+      margin: 100px auto;
+    }
+  
+    .left, .right{
+      width: 100%;
+    }
+  
+    .btn {
+      font-size: 20px;
+    }
+  
+    #MainMenu #LOGO img{
+      height: 80px;
+      min-height: 80px; /* Added min-height property */
+    }
+  
+    .logo-text {
+      font-size: 2rem;
+    }
+  
+    #MainMenu #Menu > li a {
+      font-size: 16px;
+    }
+  
+    #MainMenu #Menu .SubMenu {
+      min-width: 130px;
+      right: 50px;
+    }
+  
+    .Sample{
+      flex-direction: column;
+      height: auto;
+      padding: 5%;
+    }
+  
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+  
+    h1{
+      font-size: 4rem;
+    }
+  
+    p {
+      font-size: 2rem;
+    }
+  
+    h2{
+      font-size: 2rem;
+    }
+  
+    .container {
+      width: 80%;
+      margin: 150px auto;
+    }
+  
+    .left, .right{
+      width: 50%;
+    }
+  
+    .btn {
+      font-size: 25px;
+    }
+  
+    #MainMenu #LOGO img{
+      height: 100px;
+      min-height: 100px; /* Added min-height property */
+    }
+  
+    .logo-text {
+      font-size: 3rem;
+    }
+  
+    #MainMenu #Menu > li a {
+      font-size: 18px;
+    }
+  
+    #MainMenu #Menu .SubMenu {
+      min-width: 150px;
+      right: 90px;
+    }
+  
+    .Sample{
+      height: 600px;
+    }
+  
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+  
+    h1{
+      font-size: 5vw;
+    }
+  
+    p {
+      font-size: 1.5rem;
+    }
+  
+    h2{
+      font-size: 2.5rem;
+    }
+  
+    .container {
+      width: 70%;
+      margin: 200px auto;
+    }
+  
+    .left, .right{
+      width: 45%;
+    }
+  
+    .btn {
+      font-size: 30px;
+      bottom: 10px;
+    }
+  
+    #MainMenu #LOGO img{
+      height: 110px;
+      min-height: 110px; /* Added min-height property */
+    }
+  
+    .logo-text {
+      font-size: 4rem;
+    }
+  
+    #MainMenu #Menu > li a {
+      font-size: 20px;
+    }
+  
+    #MainMenu
+  
